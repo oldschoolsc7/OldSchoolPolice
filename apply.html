@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080d18"><title>التقديم | Old School</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">OS</span><span><b>OLD SCHOOL</b><small>وزارة الداخلية</small></span></a><nav><a href="index.html">الرئيسية</a><a href="laws.html">القوانين العسكرية</a><a class="active" href="apply.html">التقديم</a><a href="https://oldschoolsc7.github.io/sc7/pages/constitution.html" target="_blank" rel="noopener">الدستور</a></nav></header>
+<main class="page narrow">
+  <div class="eyebrow">APPLICATION FORM</div><h1>طلب انضمام</h1><p class="intro">أكمل البيانات بدقة. سيتم إرسال الطلب إلى قناة استقبال التقديم بعد ضبط رابط الويب هوك في ملف الإعدادات.</p>
+  <form id="application-form" class="form-card">
+    <div class="field"><label for="fullName">الاسم الكامل</label><input id="fullName" name="fullName" required maxlength="80" autocomplete="name" placeholder="اكتب اسمك الكامل"></div>
+    <div class="form-grid">
+      <div class="field"><label for="age">العمر</label><input id="age" name="age" type="number" required min="13" max="99" placeholder="العمر"></div>
+      <div class="field"><label for="discordId">Discord ID</label><input id="discordId" name="discordId" required inputmode="numeric" pattern="[0-9]{17,20}" maxlength="20" placeholder="معرّف ديسكورد الرقمي"></div>
+    </div>
+    <div class="field"><label for="characterName">اسم الشخصية داخل المدينة</label><input id="characterName" name="characterName" required maxlength="80" placeholder="اسم الشخصية"></div>
+    <div class="field"><label for="identityNumber">رقم الهوية داخل المدينة</label><input id="identityNumber" name="identityNumber" required maxlength="40" placeholder="رقم الهوية"></div>
+    <div class="field"><label for="experience">الخبرات السابقة</label><textarea id="experience" name="experience" rows="3" maxlength="1000" placeholder="اذكر خبراتك إن وجدت"></textarea></div>
+    <div class="field"><label for="reason">سبب التقديم</label><textarea id="reason" name="reason" rows="4" required maxlength="1500" placeholder="لماذا ترغب بالانضمام؟"></textarea></div>
+    <label class="check"><input type="checkbox" required> أقر بأن البيانات المدخلة صحيحة وأوافق على مراجعة الطلب.</label>
+    <button class="btn primary full" type="submit" id="submit-btn">إرسال الطلب</button>
+    <p id="form-status" class="form-status" role="status"></p>
+  </form>
+</main><footer>OLD SCHOOL · وزارة الداخلية <span><a href="index.html">العودة للرئيسية</a></span></footer>
+<script src="assets/config.js"></script><script src="assets/apply.js"></script>
+</body></html>
